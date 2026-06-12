@@ -224,3 +224,11 @@ git rebase origin/main
 # Something went wrong
 git rebase --abort
 ```
+## Common Mistakes
+Committing directly to main → həmişə ayrı branch açmaq lazımdır.
+
+Using git push --force → bunun əvəzinə --force-with-lease istifadə et.
+
+Bad commit messages → qısa, aydın, pattern‑ə uyğun yaz.
+
+Unstaged changes before rebase → əvvəlcə git add və ya git stash et.
