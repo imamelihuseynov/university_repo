@@ -20,7 +20,7 @@ Go through at least one of these before you begin:
 
 ## 1. How to Fork the Repository
 
-> Do this once at the start of the project.
+> Do this once at the start of the project, only if you are not added as a collaborator. If you are a collaborator, skip this section and go directly to cloning the repository.
 
 1. Open the repository page on GitHub.
 2. Click **Fork** in the top-right corner.
@@ -156,7 +156,7 @@ chore: move images into /assets folder
 ```
 
 6. Assign at least one teammate as **Reviewer**.
-7. Write `Closes #ISSUE_NUMBER` in the description to link the Issue.
+7. Write `Closes #ISSUE_NUMBER` in the description to link the Issue. To find the issue number, go to the Issues tab in the repository — the number is shown next to each issue title (e.g. #3).
 8. Click **Create Pull Request**.
 9. Move your Kanban card to **In Review**.
 
@@ -169,7 +169,7 @@ chore: move images into /assets folder
 > Run this every time before you start working, and whenever you see a new merge on `main`.
 
 1. Run `git fetch origin`
-2. Run `git checkout your-branch-name`
+2. Run `git checkout your-branch-name` — skip this step if you are already on your branch.
 3. Run `git rebase origin/main`
 4. If there are no conflicts, run `git push --force-with-lease`
 5. If there are conflicts, continue to the next section.
@@ -222,5 +222,5 @@ git fetch origin
 git rebase origin/main
 
 # Something went wrong
-git rebase --abort
+git rebase --abort.
 ```
